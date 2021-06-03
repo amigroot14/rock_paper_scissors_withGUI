@@ -90,7 +90,6 @@ body {
 
 .choice:hover {
   transform: scale(1.2);
-  padding: 5px;
 }
 
 .main-container {
