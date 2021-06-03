@@ -158,7 +158,11 @@ body {
     display: none;
   }
   .choices {
-    width: 50vw;
+    width: 60vw;
+  }
+
+  .svg {
+    margin: 0 auto;
   }
   .user-title {
     display: none;
