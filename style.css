@@ -29,6 +29,7 @@ body {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+
 .lead {
   font-size: 2rem;
   line-height: 3rem;
@@ -68,7 +69,13 @@ body {
 
 .choices {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  width: 80vh;
+  margin: auto;
+}
+
+#user {
+  width: 100%;
 }
 
 #user .choice {
@@ -119,8 +126,11 @@ body {
   .lead {
     font-size: 1.5rem;
   }
+
+  .choices {
+    width: 80vw;
+  }
   .svg {
-    margin: -10px;
     height: 100px;
     width: 100px;
     transition: all 0.3s ease-in-out;
@@ -147,6 +157,9 @@ body {
 @media (max-width: 500px) {
   #computer {
     display: none;
+  }
+  .choices {
+    width: 50vw;
   }
   .user-title {
     display: none;

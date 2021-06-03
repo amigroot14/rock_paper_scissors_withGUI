@@ -11,16 +11,9 @@ const computerScoreEl=document.querySelector('#computer-score')
 const messageEl=document.getElementById('message')
 const scoreContainer=document.querySelector('.score-container')
 
-yesBtn.addEventListener('click',()=>{
-    scoreContainer.classList.add('show')
-    showMessage("Let's Start")
-    userScore=0
-    computerScore=0
-    playGame()
-})
-
-
-
+choices.forEach(choice=>{{
+    choice.style.pointerEvents="none"
+}})
 
 choices.forEach((choice)=>{
 choice.addEventListener('click',function playGame(){
@@ -56,6 +49,26 @@ if(userScore<5&&computerScore<5){
 
 })
 })
+
+
+
+yesBtn.addEventListener('click',()=>{
+    showMessage("Let's Start")
+    choices.forEach(choice=>{{
+    choice.style.pointerEvents="auto"
+    }})
+    userScore=0
+    computerScore=0
+    userScoreEl.textContent=0
+    computerScoreEl.textContent=0
+    scoreContainer.classList.add('show')
+    playGame()
+})
+
+
+
+
+
 
 
 
